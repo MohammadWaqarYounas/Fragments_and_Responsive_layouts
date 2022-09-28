@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/_130sdp"
+                    android:text="Hello"
+                    android:textAlignment="textStart"
+                    android:textColor="#222F7C"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hello"
+                    android:layout_marginLeft="20dp"
+                    android:text="Login first to continue"
+                    android:textAlignment="textStart"
+                    android:textColor="#575454"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/cnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_below="@+id/text2"
+                    android:layout_marginHorizontal="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corner">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="@dimen/_3ssp"
+                        android:paddingLeft="@dimen/_5ssp"
+                        android:paddingTop="@dimen/_1ssp"
+                        android:text="CNIC"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/check_circle"
+                        android:hint="123-456-7890"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_8sdp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/cnic"
+                    android:id="@+id/password"
+                    android:layout_height="@dimen/_55sdp"
+                    android:layout_marginHorizontal="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corner">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/eye"
+                        android:hint="Write Password"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_8sdp"
+                        android:textSize="@dimen/_13sdp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password"
+                    android:layout_marginRight="@dimen/_13ssp"
+                    android:padding="@dimen/_10ssp"
+                    android:text="Forgot Password?"
+                    android:textAlignment="textEnd"
+                    android:textColor="#575454"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/forgot"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:background="@drawable/home_bar_corners"
+                    android:text="Login"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_140sdp"
+                    android:text="Don't have an account? "
+                    android:textColor="#575454"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_toRightOf="@+id/text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_140sdp"
+                    android:layout_below="@+id/login"
+                    android:text="SignUp"
+                    android:textColor="#222F7C"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/homebar"
+        android:id="@+id/linear" />
+
+    <RelativeLayout
+        android:id="@+id/homebar"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_9sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/home_bar_corners"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:onClick="home"
+            android:paddingVertical="@dimen/_9sdp"
+            android:src="@drawable/hut"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_5ssp"
+            android:layout_toRightOf="@+id/home"
+            android:text="• Home"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/people"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:onClick="loginpage"
+            android:paddingVertical="@dimen/_5sdp"
+            android:src="@drawable/people"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:onClick="settings"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/setting"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
